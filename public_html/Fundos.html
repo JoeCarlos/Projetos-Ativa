@@ -9,6 +9,7 @@ Listagem de fundos de Investimento
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="imagens/logo.ico" />
         <link rel="stylesheet" type="text/css" href="Ativa.css" />
+        
     </head>
     <body>
         <div class="introducao">
@@ -22,59 +23,324 @@ Listagem de fundos de Investimento
             </p>
         </div>    
         <br><br>
-        <div class="destaques">
-            <h2>FUNDOS EM DESTAQUE</h2>
+        
+        <h2>FUNDOS EM DESTAQUE</h2>
+        <div class="destaques">    
             <div class="span">
                         <div>
                         <h2>OCCAM EQUITY HEDGE FIC FIM</h2>
-                        <div>
+                        <div class="span2">
                             <div><span>RENT.12M(%)</span><br>8,89</div>
                             <div><span>RENT.24M(%)</span><br>17,98</div>
                             <div><span>RENT.36M(%)</span><br>30,46</div>
                         </div>
-                              <div>
+                              <div class="span3">
                                 <div><span>AP. INICIAL(R$)</span><br>5.000,00</div>
                                 <div><span>TX. ADM(%)</span><br>2,00</div>
-                              </div>
-                              <div>
-                                <div><span>DATA DE REFERENCIA</span><br>11/02/2020</div>
                               </div>
                            </div>
                     </div>
         
              <div class="span">
                             <h2>ATLAS ONE FIC FIA</h2>
-                            <div>
+                            <div class="span2">
                                 <div><span>RENT.12M(%)</span><br>29,77</div>
                                 <div><span>RENT.24M(%)</span><br>54,56</div>
                                 <div><span>RENT.36M(%)</span><br>87,23</div>
                               </div>
-                              <div>
+                              <div class="span3">
                                 <div><span>AP. INICIAL(R$)</span><br>5.000,00</div>
                                 <div><span>TX. ADM(%)</span><br>2,00</div>
                               </div>
-                              <div>
-                                <div><span>DATA DE REFERENCIA</span><br>11/02/2020</div>
-                              </div>
              </div>
             <div class="span">
-                            <h2 class="exibir-nome">GIANT SIGMA FIC FIM</h2>
-                              <div>
+                            <h2>GIANT SIGMA FIC FIM</h2>
+                              <div class="span2">
                                 <div><span>RENT.12M(%)</span><br>17,36</div>
                                 <div><span>RENT.24M(%)</span><br>0,00</div>
                                 <div><span>RENT.36M(%)</span><br>0,00</div>
                               </div>
-                              <div>
+                              <div class="span3">
                                 <div><span>AP. INICIAL(R$)</span><br>5.000,00</div>
                                 <div><span>TX. ADM(%)</span><br>1,50</div>
                               </div>
-                              <div>
-                                <div><span>DATA DE REFERENCIA</span><br>11/02/2020</div>
-                              </div>
+                            
           </div>
-        
+            
+            <div>
+                <button onclick="mostrarFundos('Acoes')">AÇÕES</button>
+                 <button onclick="mostrarFundos('Cambial')">CAMBIAL</button>
+                  <button onclick="mostrarFundos('Multimercados')">MULTIMERCADOS</button>
+                   <button onclick="mostrarFundos('ReferenciadoDI')">REFERENCIADO DI</button>
+                    <button onclick="mostrarFundos('Renda')">RENDA FIXA</button>
+            </div>
+            <script type="text/javascript">
+
+   function mostrarFundos(fundo) {
+  var display = document.getElementById(fundo).style.display;
+  if (display == "none")
+    document.getElementById(fundo).style.display = 'block';
+  else
+    document.getElementById(fundo).style.display = 'none';
+}
+            </script>
+            
     </div>
+        <div id="Acoes" style="display: none">
+            <table class = "lista">
+                
+                <thead class="cabecalho">
+                <th>NOME DO FUNDO</th>
+                <th>AP. INICIAL</th>
+                <th>DATA DE REFERENCIA</th>
+                <th>TX. ADM(%)</th>
+                <th>RENT. 12M(%)</th>
+                <th>RENT. 24M(%)</th>
+                <th>RENT. 24M(%)</th>
+                 </thead>
+                 <tfoot class="rodape">
+                     <tr>
+                        <td colspan="7">AÇÕES</td>
+                      </tr>
+                 </tfoot>
+                <tbody class="corpo_fundos">     
+                <tr>               
+                    <td>ALASKA BLACK FIC FIA II BDR - NÍVEL I</td>
+                    <td>1.000,00</td>
+                    <td>07/02/2020</td>
+                    <td>2,00</td>
+                    <td>19,40</td>
+                    <td>60,36</td>
+                    <td>123,60</td>
+                </tr>
+                 <tr>
+                    <td>ALASKA BLACK INSTITUCIONAL FIA</td>
+                    <td>1.000,00</td>
+                    <td>07/02/2020</td>
+                    <td>2,00</td>
+                    <td>23,62</td>
+                    <td>63,22</td>
+                    <td>174,60</td>
+                </tr>
+                
+                 <tr>
+                    <td>ARGUCIA INCOME FIA</td>
+                    <td>10.000,00</td>
+                    <td>07/02/2020</td>
+                    <td>3,00</td>
+                    <td>29,40</td>
+                    <td>33,36</td>
+                    <td>68,60</td>
+                </tr>
+                
+                 <tr>
+                    <td>ARX INCOME FIA</td>
+                    <td>500,00</td>
+                    <td>07/02/2020</td>
+                    <td>3,00</td>
+                    <td>23,30</td>
+                    <td>52,42</td>
+                    <td>96,05</td>
+                </tr>
+                </tbody>
+            </table> 
+             
+        </div>
+        <br>
+         <div id="Cambial" style="display: none" >
+            <table class = "lista">
+                
+                <thead class="cabecalho">
+                <th>NOME DO FUNDO</th>
+                <th>AP. INICIAL</th>
+                <th>DATA DE REFERENCIA</th>
+                <th>TX. ADM(%)</th>
+                <th>RENT. 12M(%)</th>
+                <th>RENT. 24M(%)</th>
+                <th>RENT. 24M(%)</th>
+                 </thead>
+                 <tfoot class="rodape">
+                     <tr>
+                        <td colspan="7">CAMBIAL</td>
+                      </tr>
+                 </tfoot>
+                <tbody class="corpo_fundos">     
+                <tr>               
+                    <td>VOTORANTIM CAMBIAL DOLAR FIC DE FI</td>
+                    <td>1.000,00</td>
+                    <td>07/02/2020</td>
+                    <td>0,89</td>
+                    <td>18,30</td>
+                    <td>39,54</td>
+                    <td>49,00</td>
+                </tr>
+                 <tr>
+                     <td>WESTERN ASSET HEDGE DÓLAR FI CAMBIAL</td>
+                    <td>25.000,00</td>
+                    <td>07/02/2020</td>
+                    <td>1,00</td>
+                    <td>18,20</td>
+                    <td>33,36</td>
+                    <td>48,60</td>
+                </tr>
+                </tbody>
+            </table> 
+             
+        </div>
+        <br>
+        <div  id="Multimercados" style="display: none">
+            <table class = "lista">
+                
+                <thead class="cabecalho">
+                <th>NOME DO FUNDO</th>
+                <th>AP. INICIAL</th>
+                <th>DATA DE REFERENCIA</th>
+                <th>TX. ADM(%)</th>
+                <th>RENT. 12M(%)</th>
+                <th>RENT. 24M(%)</th>
+                <th>RENT. 24M(%)</th>
+                 </thead>
+                 <tfoot class="rodape">
+                     <tr>
+                        <td colspan="7">MULTIMERCADOS</td>
+                      </tr>
+                 </tfoot>
+                <tbody class="corpo_fundos">     
+                <tr>               
+                    <td>ABSOLUTE HEDGE FIC FIM</td>
+                    <td>5.000,00</td>
+                    <td>07/02/2020</td>
+                    <td>1,90</td>
+                    <td>6,40</td>
+                    <td>15,36</td>
+                    <td>30,60</td>
+                </tr>
+                 <tr>
+                    <td>ACE CAPITAL FIC FIM</td>
+                    <td>10.000,00</td>
+                    <td>07/02/2020</td>
+                    <td>2,00</td>
+                    <td>SEM RENTABILIDADE PARA ESTE PRAZO</td>
+                    <td>SEM RENTABILIDADE PARA ESTE PRAZO</td>
+                    <td>SEM RENTABILIDADE PARA ESTE PRAZO</td>
+                </tr>
+                
+                 <tr>
+                    <td>ARGUCIA INCOME FIA</td>
+                    <td>10.000,00</td>
+                    <td>07/02/2020</td>
+                    <td>3,00</td>
+                    <td>29,40</td>
+                    <td>33,36</td>
+                    <td>68,60</td>
+                </tr>
+                
+                 <tr>
+                    <td>ARX INCOME FIA</td>
+                    <td>500,00</td>
+                    <td>07/02/2020</td>
+                    <td>3,00</td>
+                    <td>23,30</td>
+                    <td>52,42</td>
+                    <td>96,05</td>
+                </tr>
+                </tbody>
+            </table> 
+             
+        </div>
         
-        
+        <br>
+         <div  id="ReferenciadoDI" style="display: none">
+            <table class = "lista">
+                
+                <thead class="cabecalho">
+                <th>NOME DO FUNDO</th>
+                <th>AP. INICIAL</th>
+                <th>DATA DE REFERENCIA</th>
+                <th>TX. ADM(%)</th>
+                <th>RENT. 12M(%)</th>
+                <th>RENT. 24M(%)</th>
+                <th>RENT. 24M(%)</th>
+                 </thead>
+                 <tfoot class="rodape">
+                     <tr>
+                        <td colspan="7">REFERENCIADO DI</td>
+                      </tr>
+                 </tfoot>
+                <tbody class="corpo_fundos">     
+                <tr>               
+                    <td>BRADESCO ASSET FIC RF REFERENCIADO D</td>
+                    <td>30,00</td>
+                    <td>07/02/2020</td>
+                    <td>0,25</td>
+                    <td>5,14</td>
+                    <td>SEM RENTABILIDADE PARA ESTE PRAZO</td>
+                    <td>SEM RENTABILIDADE PARA ESTE PRAZO</td>
+                </tr>
+                </tbody>
+            </table> 
+             
+        </div>
+        <br>
+         <div  id="Renda" style="display: none">
+            <table class = "lista">
+                
+                <thead class="cabecalho">
+                <th>NOME DO FUNDO</th>
+                <th>AP. INICIAL</th>
+                <th>DATA DE REFERENCIA</th>
+                <th>TX. ADM(%)</th>
+                <th>RENT. 12M(%)</th>
+                <th>RENT. 24M(%)</th>
+                <th>RENT. 24M(%)</th>
+                 </thead>
+                 <tfoot class="rodape">
+                     <tr>
+                        <td colspan="7">RENDA FIXA</td>
+                      </tr>
+                 </tfoot>
+                <tbody class="corpo_fundos">     
+                <tr>               
+                    <td>ANGA HIGH YIELD FEEDER FIC FI RF CP II</td>
+                    <td>25.000,00</td>
+                    <td>07/02/2020</td>
+                    <td>0,50</td>
+                    <td>SEM RENTABILIDADE PARA ESTE PRAZO</td>
+                    <td>SEM RENTABILIDADE PARA ESTE PRAZO</td>
+                    <td>SEM RENTABILIDADE PARA ESTE PRAZO</td>
+                </tr>
+                 <tr>
+                    <td>AZ QUEST LUCE FIC DE FI RF CP LP</td>
+                    <td>500,00</td>
+                    <td>07/02/2020</td>
+                    <td>0,40</td>
+                    <td>4,99</td>
+                    <td>12,45</td>
+                    <td>22,45</td>
+                </tr>
+                
+                 <tr>
+                    <td>BTG PACTUAL DEB INC FIC RF CP</td>
+                    <td>1.000,00</td>
+                    <td>07/02/2020</td>
+                    <td>1,00</td>
+                    <td>1,59</td>
+                    <td>SEM RENTABILIDADE PARA ESTE PRAZO</td>
+                    <td>SEM RENTABILIDADE PARA ESTE PRAZO</td>
+                </tr>
+                
+                 <tr>
+                    <td>BTG PACTUAL YIELD DI FI REF CREDITO PRIVADO</td>
+                    <td>3000,00</td>
+                    <td>07/02/2020</td>
+                    <td>0,30</td>
+                    <td>4,98</td>
+                    <td>11,81</td>
+                    <td>22,22</td>
+                </tr>
+                </tbody>
+            </table> 
+             
+        </div>
         </body>
 </html>
